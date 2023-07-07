@@ -25,7 +25,7 @@ namespace HackerNewProxy.Controllers
                 var stories = await GetOrSetCachedStoryDetails(n);
                 return Ok(stories);
             }
-            catch()
+            catch
             {
                 return BadRequest();
             }
